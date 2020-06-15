@@ -1,34 +1,38 @@
-/*por tag*/
-h2 {color: red;}
-p {color: blue; font-family: monospace;}
+<!doctype html>
+<html>
+  <head>
+    <title>CSS Playground</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+  </head>
+  <body class="m-3">
+    <h2 id="titulo-1">Titulo</h2>
 
-/*por id*/
-#titulo-1 {font-style: italic;}
-#titulo-2 {font-weight: bold;}
+    <p>HTML para probar nuestras habilidades con el CSS</p>
 
-.base {border-width: 2px; 
-      border-style: dashed;
-      border-color: orangered;
-      padding: 1em 2em 3em 4em;
-      margin: 4em 3em 2em 1em;
-      margin-top: 4em;
-      margin-right: 3em;
-      padding-bottom: 3em;
-      padding-left: 4em;}
+    <div class="base">
+      <h2 id="titulo-2">Subtitulo</h2>
+      <p class="impar primero">
+        <span class="ejemplo">tag</span>
+      </p>
+      <p class="par primero">
+        <span class="ejemplo">.clase</span>
+      </p>
+      <p class="impar">
+        <span class="ejemplo">#id</span>
+      </p>
+      <p class="par">
+        <span class="ejemplo">tag.clase.otra</span>
+      </p>
+      <p class="impar ultimo">
+        <span class="ejemplo">.ancestro&gt;.descendiente-directo</span>
+      </p>
+      <p class="par ultimo">
+        <span class="ejemplo">.ancestro .descendiente-indirecto</span>
+      </p>
+    </div>
 
-/*por clase*/
-.ultimo {color: green;}
+<h3>Titulo 3</h2>
 
-/*combinado*/
-p.ultimo {color: blueviolet;}
-.par.ultimo {font-weight: bold;}
-
-/*alternativas*/
-h2,h3 {color: cyan; font-size: 36;}
-
-/*descendiente directo*/
-.base >h2 {text-align: right;}
-.base >p >span {text-decoration: underline;}
-
-/*descendiente indirecto*/
-.base .ejemplo {font-family: sans-serif;}
+    <input type="color">
+  </body>
+</html>
